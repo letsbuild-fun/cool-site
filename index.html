@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Let's Build Fun</title>
+  <meta name="description" content="A small, playful site from letsbuild-fun.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="logo" href="#">✦ letsbuild.fun</a>
+    <button id="theme" class="ghost" aria-label="Toggle color theme">◐</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">hello, internet</p>
+      <h1>We build <span id="word" class="shimmer">fun things</span>.</h1>
+      <p class="lede">A tiny corner of the web for experiments, side projects, and whatever we feel like making next. Move your cursor around. Click anywhere.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See what's cooking</a>
+        <a class="btn ghost" href="https://github.com/letsbuild-fun">GitHub ↗</a>
+      </div>
+    </section>
+
+    <section id="projects" class="grid">
+      <article class="card">
+        <span class="emoji">⚡</span>
+        <h2>Fast</h2>
+        <p>One HTML file, one stylesheet, one script. No build step, no framework, loads instantly.</p>
+      </article>
+      <article class="card">
+        <span class="emoji">🎨</span>
+        <h2>Playful</h2>
+        <p>An interactive particle field that follows you around and bursts when you click.</p>
+      </article>
+      <article class="card">
+        <span class="emoji">🌗</span>
+        <h2>Comfy</h2>
+        <p>Light and dark themes that follow your system, with a toggle if you disagree.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ✦ by letsbuild-fun · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
